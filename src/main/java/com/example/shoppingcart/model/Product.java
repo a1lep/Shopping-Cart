@@ -19,8 +19,8 @@ public class Product {
     private double price;
     private int quantity;
 
-    private static double totalPrice(double price, int quantity) {
-        double totalPrice = price * quantity;
+    public double totalPrice() {
+        double totalPrice = this.price * this.quantity;
         return totalPrice;
     }
 }
